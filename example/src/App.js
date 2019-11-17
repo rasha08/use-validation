@@ -1,13 +1,22 @@
-import React, { Component } from 'react'
+import React, {useEffect, useState} from 'react'
+import { useStringValidator } from 'use-validation'
 
-import ExampleComponent from 'use-validation'
+export default () => {
+  const [name, setName] = useState('')
+  const [nameFieldError, setNameValidity] = useState(null)
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+  const validateName = useStringValidator({ label: 'Name', required: true, min: 6, max: 12 });
+
+  const onNameChange = ({ target: { value } }) => setName(value);
+
+  useEffect(() => {
+    setNameValidity(validateName(name))
+  }, [name])
+
+  return (
+    <div>
+      <h1>{ !nameFieldError ? 'Name is  VALID' : nameFieldError  }</h1>
+      <input type={'text'} value={name} onChange={onNameChange} />
+    </div>
+  )
 }
