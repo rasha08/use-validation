@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/use-validation.iml" filepath="$PROJECT_DIR$/.idea/use-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/use-validation-hooks.iml" filepath="$PROJECT_DIR$/.idea/use-validation-hooks.iml" />
     </modules>
   </component>
 </project>

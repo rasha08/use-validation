@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { useStringValidator } from 'use-validation'
+import { useStringValidator } from 'use-validation-hooks'
 
 export default () => {
   const [name, setName] = useState('')

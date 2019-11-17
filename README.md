@@ -7,12 +7,12 @@
 ## Install  
   
 ```bash  
-npm install @rasha08/use-validation@1.0.0
+npm install use-validation-hooks
 ```  
 
 ## About 
 
-`use-validation` is a small validation library (*less than 1kb gzipped*), created to provide basic validators for some of the most common usages. 
+`use-validation` is a small validation library (*1.2kb gzipped*), created to provide basic validators for some of the most common usages. 
 
 **Validation Result** is error message or `null`
 
@@ -59,7 +59,7 @@ ___
   
 ```tsx  
 import React, {useEffect, useState} from 'react'
-import { useStringValidator } from 'use-validation'  
+import { useStringValidator } from 'use-validation-hooks'  
     
 export const App = () => {
   const [name, setName] = useState('')  
@@ -86,5 +86,7 @@ export const App = () => {
   
 MIT © [rasha08](https://github.com/rasha08)
 
-## Colaborators
+## Authors
+[Radovan Stevanovic](https://github.com/rasha08)
+
 [Aleksandar Ilic](https://github.com/clili93)

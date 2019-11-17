@@ -1,6 +1,6 @@
 {
-  "name": "@rasha08/use-validation",
-  "version": "1.0.1",
+  "name": "use-validation-hooks",
+  "version": "1.0.3",
   "description": "collection of react validation hooks ",
   "keywords": [
     "React",
@@ -57,9 +57,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "bugs": {
     "url": "https://github.com/rasha08/use-validation/issues"
   },
