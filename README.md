@@ -7,7 +7,7 @@
 ## Install  
   
 ```bash  
-npm install --save use-validation  
+npm install @rasha08/use-validation@1.0.0
 ```  
 
 ## About 

@@ -1,10 +1,19 @@
 {
-  "name": "use-validation",
-  "version": "1.0.0",
+  "name": "@rasha08/use-validation",
+  "version": "1.0.1",
   "description": "collection of react validation hooks ",
+  "keywords": [
+    "React",
+    "react-hooks",
+    "React validation",
+    "useValidation"
+  ],
   "author": "rasha08",
   "license": "MIT",
-  "repository": "rasha08/use-validation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasha08/use-validation.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -47,5 +56,15 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/rasha08/use-validation/issues"
+  },
+  "homepage": "https://github.com/rasha08/use-validation#readme",
+  "directories": {
+    "example": "example"
+  }
 }
