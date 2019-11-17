@@ -1,5 +1,5 @@
 
-# use-validation  
+# use-validation-hooks 
   
 > collection of react validation hooks   
 [![NPM](https://img.shields.io/npm/v/use-validation.svg)](https://www.npmjs.com/package/use-validation) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)  
@@ -17,7 +17,7 @@ npm install use-validation-hooks
 **Validation Result** is error message or `null`
 
 
-Besides these core validators that come with the package, you can always extend some validators or create specialization of one. That is how `useEmailValidator` or `useUrlValidator` sre created;
+Besides these core validators that come with the package, you can always extend some validators or create specialization of one. That is how `useEmailValidator` or `useUrlValidator` are created;
 
 ```tsx
 import { useStringValidator } from "./useStringValidator";  
@@ -35,7 +35,7 @@ export const useEmailValidator = ({
 
 ## Available Validators
   
-  ``` useEmailValidator: ({ label, required }: RequiredValidatorProps) => (value: string) => string | null; ```
+``` useEmailValidator: ({ label, required }: RequiredValidatorProps) => (value: string) => string | null; ```
   ___
 ```useDateValidator: ({ label, required, min, max, between }: DateValidatorProps) => (value: Date) => string | null;```
 ___
