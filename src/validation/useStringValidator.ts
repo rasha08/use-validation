@@ -28,7 +28,7 @@ export const useStringValidator = ({
         return `${label} must be shorter than ${max} characters`;
       }
 
-      if (regex && !regex.test(value)) {
+      if (regex && !regex.test(value.trim())) {
         return `${label} is not in valid format`;
       }
     }
