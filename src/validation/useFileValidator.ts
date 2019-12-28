@@ -9,15 +9,21 @@ export const useFileValidator = ({label, required, max, allowedExtensions}: File
   const requiredValidator = useRequiredValidator({ label, required });
 
   return (value: File): string | null => {
-    if (allowedExtensions) {
-      const extensionIsValid = allowedExtensions.map(v => v.toLowerCase()).includes(value.type.toLowerCase());
-      if (!extensionIsValid) {
-        return `${label} has unsupported file format`;
+    if (required || value) {
+      if (required && !value) {
+        return `${label} is required`;
+      }
+      if (allowedExtensions) {
+        const extensionIsValid = allowedExtensions.map(v => v.toLowerCase()).includes(value.type.toLowerCase());
+        if (!extensionIsValid) {
+          return `${label} has unsupported file format`;
+        }
+      }
+      if (max && value.size >= max) {
+        return `${label} file is too large`;
       }
     }
-    if (max && value.size >= max) {
-      return `${label} file is too large`;
-    }
+
 
     return requiredValidator(value)
   }
